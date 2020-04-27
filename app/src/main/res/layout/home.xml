@@ -22,8 +22,8 @@
             android:textStyle="normal"></TextView>
         <ImageButton
             android:id="@+id/btn_edit"
-            android:layout_width="25dp"
-            android:layout_height="25dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
             android:background="@drawable/ic_mode_edit_black_36dp"
             android:layout_centerVertical="true"
             android:layout_marginRight="12dp"
@@ -43,6 +43,7 @@
                 android:layout_height="200dp"
                 android:orientation="vertical">
                 <TextView
+                    android:id="@+id/tempa"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="First image"
@@ -100,7 +101,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Fourth image"
-                    android:textColor="#FFFFFF"></TextView>
+                    android:textColor="@color/colorTextHint"></TextView>
                 <ImageView
                     android:id="@+id/iv_img4"
                     android:layout_width="match_parent"

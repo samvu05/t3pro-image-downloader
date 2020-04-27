@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding = "16dp"
-    android:background="#212121">
+    android:background="#121212">
 
     <LinearLayout
         android:layout_marginTop="24dp"
@@ -19,6 +19,7 @@
             android:layout_gravity="center_vertical"
             android:hint="First image link "
             android:textSize="16sp"
+            android:textColor="@color/colorTextHint"
             android:textColorHint="@color/colorTextHint"
             android:backgroundTint="@color/colorTitle"
             android:layout_width="0dp"
