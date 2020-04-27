@@ -2,7 +2,6 @@ package com.sam.t3pro_image_downloader;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.text.Editable;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -22,14 +21,6 @@ public class EditActivity extends AppCompatActivity{
     private Button btn3;
     private Button btn4;
     private Button btn5;
-
-    public static final String LINK1 = "link1";
-    public static final String LINK2 = "link2";
-    public static final String LINK3 = "link3";
-    public static final String LINK4 = "link4";
-    public static final String LINK5 = "link5";
-    public static final String BUNDLE = "bundle";
-
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -88,17 +79,16 @@ public class EditActivity extends AppCompatActivity{
             }
         });
     }
-    public void passLinkData() {
-        Intent intent = new Intent(EditActivity.this,HomeActivity.class);
-        Bundle bundle = new Bundle();
 
-        bundle.putString(LINK1,edt1.getText().toString());
-        bundle.putString(LINK2,edt2.getText().toString());
-        bundle.putString(LINK3,edt3.getText().toString());
-        bundle.putString(LINK4,edt4.getText().toString());
-        bundle.putString(LINK5,edt5.getText().toString());
-
-        intent.putExtra(BUNDLE,bundle);
-        startActivity(intent);
+    private void passLinkData() {
+        Intent resultIntent = new Intent();
+        resultIntent.putExtra("edt1",edt1.getText().toString());
+        resultIntent.putExtra("edt2",edt2.getText().toString());
+        resultIntent.putExtra("edt3",edt3.getText().toString());
+        resultIntent.putExtra("edt4",edt4.getText().toString());
+        resultIntent.putExtra("edt5",edt5.getText().toString());
+        setResult(RESULT_OK,resultIntent);
+        finish();
     }
+
 }

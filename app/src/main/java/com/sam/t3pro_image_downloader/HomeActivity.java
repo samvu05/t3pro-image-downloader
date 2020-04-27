@@ -1,9 +1,13 @@
 package com.sam.t3pro_image_downloader;
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -12,6 +16,9 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.io.IOException;
+import java.io.InputStream;
+
 public class HomeActivity extends AppCompatActivity {
     private ImageButton btnEdit;
     private ImageView imgv1;
@@ -19,13 +26,6 @@ public class HomeActivity extends AppCompatActivity {
     private ImageView imgv3;
     private ImageView imgv4;
     private ImageView imgv5;
-    private String linkImg1 = "";
-    private String linkImg2 = "";
-    private String linkImg3 = "";
-    private String linkImg4 = "";
-    private String linkImg5 = "";
-    private TextView textView;
-    private int count = 0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,12 +35,38 @@ public class HomeActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(HomeActivity.this,EditActivity.class);
-                startActivity(intent);
-                count++;
+                startActivityForResult(intent,1);
             }
         });
-        if(count != 0){
-            getDataFromEditActivity();
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (requestCode == 1){
+            if (resultCode == RESULT_OK){
+
+                String url1 = data.getStringExtra("edt1");
+                String url2 = data.getStringExtra("edt2");
+                String url3 = data.getStringExtra("edt3");
+                String url4 = data.getStringExtra("edt4");
+                String url5 = data.getStringExtra("edt5");
+
+                LoadImage loadImg1 = new LoadImage(imgv1);
+                loadImg1.execute(url1);
+
+                LoadImage loadImg2 = new LoadImage(imgv2);
+                loadImg2.execute(url2);
+
+                LoadImage loadImg3 = new LoadImage(imgv3);
+                loadImg3.execute(url3);
+
+                LoadImage loadImg4 = new LoadImage(imgv4);
+                loadImg4.execute(url4);
+
+                LoadImage loadImg5 = new LoadImage(imgv5);
+                loadImg5.execute(url5);
+            }
         }
     }
 
@@ -51,24 +77,29 @@ public class HomeActivity extends AppCompatActivity {
         imgv4 = findViewById(R.id.iv_img4);
         imgv5 = findViewById(R.id.iv_img5);
         btnEdit = findViewById(R.id.btn_edit);
-        textView = findViewById(R.id.tempa);
+    }
+    private class LoadImage extends AsyncTask<String,Void, Bitmap> {
+        ImageView imageView;
+        public LoadImage (ImageView ivResult){
+            this.imageView = ivResult;
+        }
+        @Override
+        protected Bitmap doInBackground(String... strings) {
+            String urlLink = strings[0];
+            Bitmap bitmap = null;
+            try{
+                InputStream inputStream = new java.net.URL(urlLink).openStream();
+                bitmap = BitmapFactory.decodeStream(inputStream);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+            return bitmap;
+        }
+
+        @Override
+        protected void onPostExecute(Bitmap bitmap) {
+            this.imageView.setImageBitmap(bitmap);
+        }
     }
 
-    private void getDataFromEditActivity() {
-        Intent intent = getIntent();
-        Bundle bundle = intent.getBundleExtra(EditActivity.BUNDLE);
-        String link1 = bundle.getString(EditActivity.LINK1);
-        String link2 = bundle.getString(EditActivity.LINK2);
-        String link3 = bundle.getString(EditActivity.LINK3);
-        String link4 = bundle.getString(EditActivity.LINK4);
-        String link5 = bundle.getString(EditActivity.LINK5);
-
-        textView.setText(link1);
-
-//        Toast.makeText(HomeActivity.this,link1,Toast.LENGTH_SHORT).show();
-//        Toast.makeText(HomeActivity.this,link2,Toast.LENGTH_SHORT).show();
-//        Toast.makeText(HomeActivity.this,link3,Toast.LENGTH_SHORT).show();
-//        Toast.makeText(HomeActivity.this,link4,Toast.LENGTH_SHORT).show();
-//        Toast.makeText(HomeActivity.this,link5,Toast.LENGTH_SHORT).show();
-    }
 }
