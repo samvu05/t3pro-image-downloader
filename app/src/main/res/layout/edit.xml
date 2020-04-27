@@ -11,23 +11,26 @@
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:orientation="horizontal"
-        android:weightSum="6">
+        android:weightSum="5">
         <EditText
+            android:id="@+id/edt_1"
             android:layout_weight="4"
-            android:layout_height="80dp"
+            android:layout_height="50dp"
             android:layout_gravity="center_vertical"
-            android:hint="djfdhfj"
-            android:layout_width="0dp"></EditText>
+            android:hint="First image link "
+            android:textSize="16sp"
+            android:textColorHint="@color/colorTextHint"
+            android:backgroundTint="#FFFFFF"
+            android:layout_width="0dp"
+
+            ></EditText>
         <Button
+            android:id="@+id/btn_clear1"
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="50dp"
-            android:layout_gravity="center_vertical"
-            ></Button>
-        <Button
-            android:layout_weight="1"
-            android:layout_width="0dp"
-            android:layout_height="50dp"
+            android:text="Clear"
+            android:textAllCaps="false"
             android:layout_gravity="center_vertical"
             ></Button>
     </LinearLayout>
@@ -37,23 +40,24 @@
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:orientation="horizontal"
-        android:weightSum="6">
+        android:weightSum="5">
         <EditText
+            android:id="@+id/edt_2"
             android:layout_weight="4"
-            android:layout_height="80dp"
+            android:layout_height="50dp"
             android:layout_gravity="center_vertical"
-            android:hint="djfdhfj"
+            android:hint="Second image link"
+            android:textSize="16sp"
+            android:textColorHint="@color/colorTextHint"
+            android:backgroundTint="#FFFFFF"
             android:layout_width="0dp"></EditText>
         <Button
+            android:id="@+id/btn_clear2"
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="50dp"
-            android:layout_gravity="center_vertical"
-            ></Button>
-        <Button
-            android:layout_weight="1"
-            android:layout_width="0dp"
-            android:layout_height="50dp"
+            android:text="Clear"
+            android:textAllCaps="false"
             android:layout_gravity="center_vertical"
             ></Button>
     </LinearLayout>
@@ -63,23 +67,24 @@
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:orientation="horizontal"
-        android:weightSum="6">
+        android:weightSum="5">
         <EditText
+            android:id="@+id/edt_3"
             android:layout_weight="4"
-            android:layout_height="80dp"
+            android:layout_height="50dp"
             android:layout_gravity="center_vertical"
-            android:hint="djfdhfj"
+            android:hint="Third image link"
+            android:textSize="16sp"
+            android:textColorHint="@color/colorTextHint"
+            android:backgroundTint="#FFFFFF"
             android:layout_width="0dp"></EditText>
         <Button
+            android:id="@+id/btn_clear3"
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="50dp"
-            android:layout_gravity="center_vertical"
-            ></Button>
-        <Button
-            android:layout_weight="1"
-            android:layout_width="0dp"
-            android:layout_height="50dp"
+            android:text="Clear"
+            android:textAllCaps="false"
             android:layout_gravity="center_vertical"
             ></Button>
     </LinearLayout>
@@ -89,23 +94,24 @@
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:orientation="horizontal"
-        android:weightSum="6">
+        android:weightSum="5">
         <EditText
+            android:id="@+id/edt_4"
             android:layout_weight="4"
-            android:layout_height="80dp"
+            android:layout_height="50dp"
             android:layout_gravity="center_vertical"
-            android:hint="djfdhfj"
+            android:hint="Fourth image link"
+            android:textSize="16sp"
+            android:textColorHint="@color/colorTextHint"
+            android:backgroundTint="#FFFFFF"
             android:layout_width="0dp"></EditText>
         <Button
+            android:id="@+id/btn_clear4"
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="50dp"
-            android:layout_gravity="center_vertical"
-            ></Button>
-        <Button
-            android:layout_weight="1"
-            android:layout_width="0dp"
-            android:layout_height="50dp"
+            android:text="Clear"
+            android:textAllCaps="false"
             android:layout_gravity="center_vertical"
             ></Button>
     </LinearLayout>
@@ -115,32 +121,35 @@
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:orientation="horizontal"
-        android:weightSum="6">
+        android:weightSum="5">
         <EditText
+            android:id="@+id/edt_5"
             android:layout_weight="4"
-            android:layout_height="80dp"
+            android:layout_height="50dp"
             android:layout_gravity="center_vertical"
-            android:hint="djfdhfj"
+            android:hint="Fifth image link"
+            android:textSize="16sp"
+            android:textColorHint="@color/colorTextHint"
+            android:backgroundTint="#FFFFFF"
             android:layout_width="0dp"></EditText>
         <Button
+            android:id="@+id/btn_clear5"
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="50dp"
-            android:layout_gravity="center_vertical"
-            ></Button>
-        <Button
-            android:layout_weight="1"
-            android:layout_width="0dp"
-            android:layout_height="50dp"
+            android:text="Clear"
+            android:textAllCaps="false"
             android:layout_gravity="center_vertical"
             ></Button>
     </LinearLayout>
 
     <Button
+        android:id="@+id/btn_submit"
         android:layout_marginTop="16dp"
         android:layout_width="120dp"
         android:layout_height="50dp"
         android:text="Submit"
+        android:textAllCaps="false"
         android:layout_gravity="center_horizontal"></Button>
 
 </LinearLayout>

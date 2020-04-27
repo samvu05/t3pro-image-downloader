@@ -15,22 +15,24 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="N E T F L I X"
+            android:text="My collection"
             android:layout_centerVertical="true"
             android:textSize="25sp"
-            android:textColor="#F44336"
-            android:textStyle="bold"></TextView>
+            android:textColor="@color/colorTitle"
+            android:textStyle="normal"></TextView>
         <ImageButton
+            android:id="@+id/btn_edit"
             android:layout_width="25dp"
             android:layout_height="25dp"
-            android:background="@drawable/ic_edit_red_600_24dp"
+            android:background="@drawable/ic_mode_edit_black_36dp"
             android:layout_centerVertical="true"
             android:layout_marginRight="12dp"
             android:layout_alignParentRight="true"></ImageButton>
     </RelativeLayout>
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -43,81 +45,86 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="First Movie"
-                    android:textColor="#FFFFFF"></TextView>
+                    android:text="First image"
+                    android:textColor="@color/colorTextHint"></TextView>
                 <ImageView
+                    android:id="@+id/iv_img1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginTop="5dp"
-                    android:background="#154525"></ImageView>
+                    android:background="@color/colorImgNull"></ImageView>
             </LinearLayout>
 
             <LinearLayout
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="15dp"
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
                 android:orientation="vertical">
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Second Movie"
-                    android:textColor="#FFFFFF"></TextView>
+                    android:text="Second image"
+                    android:textColor="@color/colorTextHint"></TextView>
                 <ImageView
+                    android:id="@+id/iv_img2"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginTop="5dp"
-                    android:background="#154525"></ImageView>
+                    android:background="@color/colorImgNull"></ImageView>
             </LinearLayout>
 
             <LinearLayout
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="15dp"
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
                 android:orientation="vertical">
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Three Movie"
-                    android:textColor="#FFFFFF"></TextView>
+                    android:text="Third image"
+                    android:textColor="@color/colorTextHint"></TextView>
                 <ImageView
+                    android:id="@+id/iv_img3"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginTop="5dp"
-                    android:background="#154525"></ImageView>
+                    android:background="@color/colorImgNull"></ImageView>
             </LinearLayout>
 
             <LinearLayout
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="15dp"
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
                 android:orientation="vertical">
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Four Movie"
+                    android:text="Fourth image"
                     android:textColor="#FFFFFF"></TextView>
                 <ImageView
+                    android:id="@+id/iv_img4"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginTop="5dp"
-                    android:background="#154525"></ImageView>
+                    android:background="@color/colorImgNull"></ImageView>
             </LinearLayout>
 
             <LinearLayout
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="15dp"
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
                 android:orientation="vertical">
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Five Movie"
-                    android:textColor="#FFFFFF"></TextView>
+                    android:text="Fifth image"
+                    android:textColor="@color/colorTextHint"></TextView>
                 <ImageView
+                    android:id="@+id/iv_img5"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginTop="5dp"
-                    android:background="#154525"></ImageView>
+                    android:background="@color/colorImgNull"></ImageView>
             </LinearLayout>
         </LinearLayout>
     </ScrollView>
