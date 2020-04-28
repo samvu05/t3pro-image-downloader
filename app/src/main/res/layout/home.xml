@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="#121212"
     android:orientation="vertical"
-    android:padding="16dp"
+    android:padding = "8dp"
     tools:context=".HomeActivity">
     <RelativeLayout
         android:layout_width="match_parent"
@@ -40,15 +40,16 @@
             >
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="200dp"
+                android:layout_height="230dp"
                 android:orientation="vertical">
                 <TextView
                     android:id="@+id/tempa"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="First image"
+                    android:text="first image"
                     android:textColor="@color/colorTextHint"></TextView>
                 <ImageView
+                    android:scaleType="centerCrop"
                     android:id="@+id/iv_img1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -59,15 +60,16 @@
             <LinearLayout
                 android:layout_marginTop="15dp"
                 android:layout_width="match_parent"
-                android:layout_height="200dp"
+                android:layout_height="230dp"
                 android:orientation="vertical">
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Second image"
+                    android:text="second image"
                     android:textColor="@color/colorTextHint"></TextView>
                 <ImageView
                     android:id="@+id/iv_img2"
+                    android:scaleType="centerCrop"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginTop="5dp"
@@ -77,15 +79,16 @@
             <LinearLayout
                 android:layout_marginTop="15dp"
                 android:layout_width="match_parent"
-                android:layout_height="200dp"
+                android:layout_height="230dp"
                 android:orientation="vertical">
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Third image"
+                    android:text="third image"
                     android:textColor="@color/colorTextHint"></TextView>
                 <ImageView
                     android:id="@+id/iv_img3"
+                    android:scaleType="centerCrop"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginTop="5dp"
@@ -95,15 +98,16 @@
             <LinearLayout
                 android:layout_marginTop="15dp"
                 android:layout_width="match_parent"
-                android:layout_height="200dp"
+                android:layout_height="230dp"
                 android:orientation="vertical">
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Fourth image"
+                    android:text="fourth image"
                     android:textColor="@color/colorTextHint"></TextView>
                 <ImageView
                     android:id="@+id/iv_img4"
+                    android:scaleType="centerCrop"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginTop="5dp"
@@ -113,15 +117,16 @@
             <LinearLayout
                 android:layout_marginTop="15dp"
                 android:layout_width="match_parent"
-                android:layout_height="200dp"
+                android:layout_height="230dp"
                 android:orientation="vertical">
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Fifth image"
+                    android:text="fifth image"
                     android:textColor="@color/colorTextHint"></TextView>
                 <ImageView
                     android:id="@+id/iv_img5"
+                    android:scaleType="centerCrop"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginTop="5dp"
