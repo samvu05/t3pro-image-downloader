@@ -4,27 +4,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#121212"
+    android:background="#000000"
     android:orientation="vertical"
-    android:padding = "8dp"
     tools:context=".HomeActivity">
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:background="#121212">
+        android:layout_height="50dp">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="My collection"
             android:layout_centerVertical="true"
-            android:textSize="25sp"
+            android:textSize="28dp"
             android:textColor="@color/colorTitle"
             android:textStyle="normal"></TextView>
         <ImageButton
             android:id="@+id/btn_edit"
             android:layout_width="20dp"
             android:layout_height="20dp"
-            android:background="@drawable/ic_mode_edit_black_36dp"
+            android:background="@drawable/ic_border_color_black_24dp"
             android:layout_centerVertical="true"
             android:layout_marginRight="12dp"
             android:layout_alignParentRight="true"></ImageButton>
@@ -46,7 +44,7 @@
                     android:id="@+id/tempa"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="first image"
+                    android:text="First image"
                     android:textColor="@color/colorTextHint"></TextView>
                 <ImageView
                     android:scaleType="centerCrop"
@@ -65,7 +63,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="second image"
+                    android:text="Second image"
                     android:textColor="@color/colorTextHint"></TextView>
                 <ImageView
                     android:id="@+id/iv_img2"
@@ -84,7 +82,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="third image"
+                    android:text="Third image"
                     android:textColor="@color/colorTextHint"></TextView>
                 <ImageView
                     android:id="@+id/iv_img3"
@@ -103,7 +101,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="fourth image"
+                    android:text="Fourth image"
                     android:textColor="@color/colorTextHint"></TextView>
                 <ImageView
                     android:id="@+id/iv_img4"
@@ -122,7 +120,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="fifth image"
+                    android:text="Fifth image"
                     android:textColor="@color/colorTextHint"></TextView>
                 <ImageView
                     android:id="@+id/iv_img5"

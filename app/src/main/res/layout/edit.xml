@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding = "16dp"
-    android:background="#121212">
+    android:background="#000000">
 
     <LinearLayout
         android:layout_marginTop="24dp"
@@ -18,7 +18,7 @@
             android:layout_height="50dp"
             android:layout_gravity="center_vertical"
             android:hint="First image link "
-            android:textSize="16sp"
+            android:textSize="14sp"
             android:textColor="@color/colorTextHint"
             android:textColorHint="@color/colorTextHint"
             android:backgroundTint="@color/colorTitle"
@@ -50,7 +50,8 @@
             android:layout_height="50dp"
             android:layout_gravity="center_vertical"
             android:hint="Second image link"
-            android:textSize="16sp"
+            android:textSize="14sp"
+            android:textColor="@color/colorTextHint"
             android:textColorHint="@color/colorTextHint"
             android:backgroundTint="@color/colorTitle"
             android:layout_width="0dp"></EditText>
@@ -79,7 +80,8 @@
             android:layout_height="50dp"
             android:layout_gravity="center_vertical"
             android:hint="Third image link"
-            android:textSize="16sp"
+            android:textSize="14sp"
+            android:textColor="@color/colorTextHint"
             android:textColorHint="@color/colorTextHint"
             android:backgroundTint="@color/colorTitle"
             android:layout_width="0dp"></EditText>
@@ -107,8 +109,9 @@
             android:layout_weight="4"
             android:layout_height="50dp"
             android:layout_gravity="center_vertical"
-            android:hint="Third image link"
-            android:textSize="16sp"
+            android:hint="Fourth image link"
+            android:textSize="14sp"
+            android:textColor="@color/colorTextHint"
             android:textColorHint="@color/colorTextHint"
             android:backgroundTint="@color/colorTitle"
             android:layout_width="0dp"></EditText>
@@ -137,7 +140,8 @@
             android:layout_height="50dp"
             android:layout_gravity="center_vertical"
             android:hint="Fifth image link"
-            android:textSize="16sp"
+            android:textSize="14sp"
+            android:textColor="@color/colorTextHint"
             android:textColorHint="@color/colorTextHint"
             android:backgroundTint="@color/colorTitle"
             android:layout_width="0dp"></EditText>
